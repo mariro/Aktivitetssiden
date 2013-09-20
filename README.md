@@ -10,4 +10,6 @@ Lisa Tvedt<br>
 Knut Enga<br>
 Marius Olsen<br>
 
+Alle har hver sin branch, med sitt forslag.
 
+Designet vi kommer til å ta utgangspunkt i er Marius sitt design, under Mappen "Nytt Design".
