@@ -1,0 +1,88 @@
+#container{
+width:	900px;
+}
+
+#men{
+position: absolute;
+top: 100px;
+left: 600px;
+font-size: 14px;
+}
+
+#header	{
+
+width:100%;
+height:100px;
+position: relative;
+background-image: url(bilder/header.jpg);
+border-bottom: 2px solid #000000; 
+}
+#meny {
+font-family: arial;
+font-size: 16px; 
+text-align: center;
+width: 890px; 
+padding: 10px 0px 10px 0px;
+background-color: #none; 
+margin-left: auto;
+margin-right: auto;
+}
+#meny a {
+background-color: none;
+color: #898989; 
+padding: 5px 15px 5px 15px;
+width: 100%;
+margin: 0px 8px 0px 0px; 
+}
+#meny a:hover {
+color: #696969; 
+background-color: #none; 
+}
+.meny ul {
+margin: 0px;
+}
+.meny li {
+margin: 0px	25px	0px	0px;
+list-style-type:none;
+display:inline;
+}
+
+
+#sidemeny ul{
+display: table;
+background-color: #blue;
+margin-top: 5;
+list-style-type: none;
+}
+#sidemeny ul li{
+text-align: left;
+font-size: 17px;
+}
+#sidemeny ul li a{
+text-align: left;
+color: #322918;
+text-decoration: none;
+}
+#sidemeny ul ul {
+display:none;
+}
+#sidemeny ul li:hover {
+font-size: 19px;
+}
+#sidemeny ul li:hover > ul{
+display:block;
+}
+
+#body{
+width:99%;
+height: 75%;
+background-color:none;
+}
+#footer{
+clear: both;
+background-color: #grey;
+widght: 75%;
+position: absolute;
+top: 100px;
+left: 600px;
+}
