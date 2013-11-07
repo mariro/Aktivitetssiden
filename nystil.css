@@ -1,4 +1,3 @@
-
 #Siden  {
 
 width: 1000px;
@@ -8,9 +7,7 @@ margin-right:auto;
 }
 
 #topp	{
-background-image:url('images.jpg');
-background-repeat:cover;
-background-size:1000px 120px;
+
 width: 996px;
 height: 120px;
 position: relative;
@@ -34,14 +31,17 @@ ul {
     padding: 0;
     list-style: none;
 }
+
 ul li {
     display: block;
     position: relative;
     float: left;
 }
+
 li ul {
     display: none;
 }
+
 ul li a {
     display: block;
     text-decoration: none;
@@ -52,20 +52,27 @@ ul li a {
     margin-left: 1px;
     white-space: nowrap;
 }
+
 ul li a:hover {
 background: #3b3b3b;
 }
+
 li:hover ul {
     display: block;
     position: absolute;
 }
+
 li:hover li {
     float: none;
-    font-size: 11px;
+    font-size: 12px;
 }
-li:hover a { background: #3b3b3b; }
+
+li:hover a { 
+	background: #3b3b3b; 
+}
+
 li:hover li a:hover {
-    background: #1e7c9a;
+    background: #ffffff;
 }
 
 
@@ -97,5 +104,4 @@ border: solid 2px;
 
 
 }
-
 

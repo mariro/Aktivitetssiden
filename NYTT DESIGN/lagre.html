@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <link href="css.css" rel="stylesheet" type="text/css">
+  <title>Test</title>
+</head>
+<div id="background"> <br>
+<div id="topptekst">Registrering av aktiviteter</div>
+
+<div id="topp">	
+	<ul>
+		<li class="meny">
+			<a href="index.html">Nyheter</a>
+		</li>
+		<li class="meny">
+			<a href="#">Ballsport</a>
+			<ul>
+				<li><a href="fotball.php">Fotball</a></li>
+				<li><a href="Ballsport2.php">Innendørs</a></li>
+				<li><a href="Ballsport3.php">Utendørs</a></li>
+			</ul>
+		</li>
+		<li class="meny">
+			<a href="#">Friidrett</a>
+			<ul>
+				<li><a href="#">Link1</a></li>
+				<li><a href="#">Link2</a></li>
+				<li><a href="#">Link2</a></li>
+			</ul>
+		</li>
+		<li class="meny">
+			<a href="#">Treningssenter</a>
+			<ul>
+			</ul>
+		</li>
+		<li class="meny">
+			<a href="omoss.html">Om oss</a>
+		</li>
+	</ul>
+</div>
+
+<div id="midten">
+<div id="tekstboks">
+<form method="post" action="lagre.php" name="test"><br>
+<input type="radio" name="gren" value="Fotball">Fotball</br>
+<input type="radio" name="gren" value="Inneball">Innendørs ballsport</br>
+<input type="radio" name="gren" value="Uteball">Utendørs ballsport</br>
+<input type="radio" name="gren" value="Friidrett">Friidrett</br>
+<Span>Navn : </span><input type="text" value=" " name="Navn"/><br>
+			<Span>Sted : </span><input type="text" value=" " name="Sted"/><br>
+			<Span>Tid : </span><input type="text" value=" " name="Tid"/><br>
+			<Span>Kostnader : </span><input type="text" value=" " name="Kostnader"/><br>
+			<Span>Hjemmeside : </span><input type="text" value=" " name="Hjemmeside"/><br>
+			<Span>Kontakt : </span><input type="text" value=" " name="Kontakt"/><br><br>
+			<input type="submit" name="lagre" value="Lagre"/>
+			<input name="hente" value="Vis lagret" type="submit"/>
+			<input name="nullstill" value="Blank ut" type="reset"/>
+</form>
+<a href="index.html">Tilbake</a>
+</div></div>
+<div id="bunntekst">
+	(C) iSmart
+	</div></div>
+</body>
+</html>

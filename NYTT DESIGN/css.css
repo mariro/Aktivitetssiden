@@ -10,9 +10,9 @@ html, body {
 #background {
 	background: url(bakgrunn.jpg);
 	background-size: cover;
+	background-position: center;
 	height:100%;
 	width:100%;
-	opacity: 1;
 	}
 
 /* Ruten for overskrift */
@@ -25,14 +25,14 @@ html, body {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	height: 35px;
+	height: 38px;
 	width: 660px;
 	border: solid black 0.5px;
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 	border-bottom-right-radius: 30px;
 	border-bottom-left-radius: 30px;
-	box-shadow:5px 5px 5px 2px black;	
+	box-shadow:3px 3px 3px 1px black;	
 	}
 
 /* Der linkene har plass */
@@ -42,19 +42,18 @@ html, body {
 	margin-right: auto;
 	position: inherit;
 	height: 40px;
-	width: 800px;
+	width: 745px;
 	text-align: center;
 	}
 
 /* Midt delen av siden */
 	
 #midten {
-	
 	background: white;
 	margin-left: auto;
 	margin-right: auto;
-	position: inherit;
-	height: 710px;
+	position: relative;
+	height: 60%;
 	width: 660px;
 	border: solid black 0.5px;
 	border-top-left-radius: 30px;
@@ -62,9 +61,33 @@ html, body {
 	border-bottom-right-radius: 30px;
 	border-bottom-left-radius: 30px;
 	box-shadow:5px 5px 5px 2px black;
+	overflow:auto;
 }
 
+#tekstboks {
+	padding-left: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid black 5px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	width: 580px;
+	hight: 160px;
+	margin-top: 15px;
+	z-index: 1;
+	text-align: center;
+	}
+
+¤#overskrift {
+	text-size: 20px;
+	text-color: blue;
+	text-style:bold;
+	}
+
 #bunntekst {
+	margin-top: 15px;
 	font-size: 30px;
 	text-align: center;
 	background: #6699CC;
@@ -92,62 +115,58 @@ html, body {
 	padding: 0px 17px 17px 15px;
 	}
 
-/* For linker */
-
-#linker	{
-	background: #6699CC;
-	margin: auto;
-	border: solid;
-	float: left;
-		}
-			
-.meny ul {
+/* Font */		
+.meny {
     font-size: 19px;
-	padding: 0;
+	padding: 0px;
     list-style: none;
-		}
-		
-ul li 		{
-	opacity: 0.6;
-	display: inline-block;
-	width: 120px;
-    position: inherit;
-	border: solid 0.5px;
+	position: align;
+	}
+
+/* Stil på knappene */		
+ul li	{
+	opacity: 0.8;
+	display: block;
+	float:left;
+	width: 130px;
+    position: relative;
 	background: #6699CC;
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 	border-bottom-right-radius: 30px;
 	border-bottom-left-radius: 30px;
-	box-shadow:5px 5px 5px 2px black;
-		}
-		
-ul li a 	{
+	box-shadow:2px 2px 2px 0.5px black;
+	margin-left: 2px;
+	margin-bottom: 4px;
+	z-index: 2;
+	}
 	
-	width: 120px;
+/* Gjør hele knappen farget */		
+ul a{	
+	width: 131px;
     text-decoration: none;
     color: #ffffff;
-    padding: 0;
-	
-		}
-		
-ul li a:hover {
-	border: solid 0.5px;
+    padding: 0px;
+	}
+
+/* Definerer knappen når musen er over */		
+ul a:hover {
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 	border-bottom-right-radius: 30px;
 	border-bottom-left-radius: 30px;
-	opacity: 0.6;
-	display: inline-block;
+	display: block;
 	background: black;
-		}
-		
-li:hover ul {
-	border: solid 0.5px;
-	border-top-left-radius: 30px;
-	border-top-right-radius: 30px;
-	border-bottom-right-radius: 30px;
-	border-bottom-left-radius: 30px;
-	opacity: 0.6;
-    display: inline-block;
-	background: #6699CC;
-		}
+	}
+
+/* Dropdown menyen */
+ul li ul{
+	display: none;
+	position: absolute;
+	padding: 4px 0px;
+	}
+	
+ul li:hover > ul {
+	display: block;
+	opacity: 1;
+	}
